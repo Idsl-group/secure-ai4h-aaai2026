@@ -367,48 +367,76 @@ table.navigation a.current {
 }
 
 /* Venue button */
-.hotel-button-container {
-  text-align: left;
-  padding-left: 40px;
-  margin: 2em 0;
+/* ========== Conference Rates Section ========== */
+
+#conference-rates .styled-table th,
+#conference-rates .styled-table td {
+  vertical-align: top;
+  padding: 0.6em 0.8em;
+}
+
+#conference-rates td:first-child strong {
+  font-size: 1.05em;
+}
+
+#conference-rates .tag {
+  display: inline-block;
+  background-color: #eef2f7;
+  color: #333;
+  font-size: 0.85em;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
 .hotel-button {
-  background-color: #006699;
-  color: white;
-  padding: 12px 24px;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #0056b3; /* adjust to your theme primary */
+  color: #fff;
+  border-radius: 4px;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 1.1em;
-  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease-in-out;
 }
-
 .hotel-button:hover {
-  background-color: #004d73;
+  background-color: #004494;
 }
 
-
-.transport-link {
-  padding-left: 40px;
-  font-size: 0.95em;
-  color: #333;
-  margin-top: 1em;
-  line-height: 1.6;
+#conference-rates .contact-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.transport-link a {
-  color: #0056b3;
-  font-weight: 500;
+#conference-rates .cta-button {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
   text-decoration: none;
-  margin-left: 5px;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.transport-link a:hover {
-  color: #003d80;
-  text-decoration: underline;
+#conference-rates .cta-button.outline {
+  border: 1px solid #0056b3;
+  color: #0056b3;
+  background: transparent;
 }
+#conference-rates .cta-button.outline:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+#conference-rates .cta-button {
+  background-color: #0056b3;
+  color: #fff;
+}
+#conference-rates .cta-button:hover {
+  background-color: #004494;
+}
+
 
 /* Call for Papers page */
 .travel-grant-section {
