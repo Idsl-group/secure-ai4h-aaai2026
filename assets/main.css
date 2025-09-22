@@ -543,6 +543,113 @@ p, ul, ol {
   font-size: 1.2em;
   margin-bottom: 0.5em;
 }
+
+/* ---------- Registration page layout ---------- */
+.container.registration {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.info-card {
+  background: #f9fbfd;
+  border: 1px solid #e6edf5;
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-top: 18px;
+}
+
+.info-card.small {
+  padding: 12px 14px;
+}
+
+.info-card h3,
+.rate-section h3 {
+  margin-top: 0;
+}
+
+.info-card .compact-list {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.info-card .compact-list li {
+  margin: 4px 0;
+}
+
+.subnote {
+  margin: 4px 0 12px;
+  font-size: 0.95em;
+  color: #4a5568;
+}
+
+/* ---------- Hours grid ---------- */
+.hours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.hours-block {
+  background: #fff;
+  border: 1px solid #e6edf5;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.hours-block h4 {
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+}
+
+/* ---------- Rates tables ---------- */
+.styled-table.rates {
+  margin-top: 12px;
+}
+
+.styled-table.rates thead th {
+  vertical-align: bottom;
+}
+
+.styled-table.rates td,
+.styled-table.rates th {
+  vertical-align: top;
+}
+
+.styled-table.rates .muted {
+  font-weight: 400;
+  color: #6b7280;
+  font-size: 0.85em;
+}
+
+.styled-table.rates.compact td,
+.styled-table.rates.compact th {
+  padding: 0.5em 0.75em;
+}
+
+/* ---------- Primary action ---------- */
+.registration-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0 0;
+}
+
+.registration-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #0056b3;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.registration-button:hover {
+  background: #004494;
+}
+
  
 /* Formatting note box — matches site palette */
 .formatting-note {
