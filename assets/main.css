@@ -1,17 +1,5 @@
 /* main.css */
 
-/* These are the colors and fonts used throughout the webpage.
- * I've listed them here so that a user may easily
- * do a search-and-replace for these to change the site theme.
- *   'Roboto',sans-serif; Font for the title text
- *   'Roboto-Slab',serif; Font for the body text 
- *   #fafafa; Background color of the site
- *   #505050; Foreground (text) color of the site
- *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Program
- *   #b2132e; Reddish, "Conference" in the logo, hover color for links
- *   #813c54; Heading color, titles in the Program
- *   #b8860b; Dark Goldenrod, color for links
- */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
 
@@ -37,11 +25,6 @@ body{
     width: 1000px;
 }
 
-/* a{color: #b8860b; text-decoration:none;}
-a.current{color: #52739e;}
-a.current:hover{color: #e82945;}
-a:hover{color: #b2132e;}
-a:active{color: #e82945;} */
 h1,h2,h3,h4{clear:left; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 h1{font-size:2.67em;}
 h2{font-size:2.00em;}
@@ -67,16 +50,12 @@ table{
     width: 1000px;
     margin: 12px auto 24px auto;
     float: center;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
 }
 th,td{
     text-align: left;
-    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
-    /*border: 1px solid black;*/
 }
 
-/* === HERO BANNER (from scratch) === */
+/* === HERO BANNER  === */
 .hero {
   position: relative;
   max-width: 1000px;
@@ -95,9 +74,10 @@ th,td{
   inset: 0;
   display: grid;
   place-items: center;
-  pointer-events: none; /* overlay is purely visual */
+  pointer-events: none; 
 }
-/* Replace your .hero__content block with this */
+
+
 .hero__content {
   position: relative;
   text-align: center;
@@ -107,11 +87,10 @@ th,td{
   padding: 22px 28px;
   border-radius: 14px;
   box-shadow: 0 8px 22px rgba(0,0,0,0.35);
-
-  /* 🔒 FIXED SIZE: box won’t grow while typing */
-  width: 92%;              /* fixed width (was max-width) */
-  max-width: 940px;        /* hard cap for large screens */
-  min-height: 220px;       /* enough room for all lines */
+  
+  width: 92%;              
+  max-width: 940px;        
+  min-height: 220px;       
   margin: 0 auto;
 }
 
@@ -123,23 +102,23 @@ th,td{
 
 .hero__content .line3,
 .hero__content .line3 ~ .hero__line {
-  font-size: 1.6em;         /* slightly smaller than line 2 */
+  font-size: 1.6em;         
   font-weight: 500;
   color: rgba(255,255,255,0.92);
   letter-spacing: 0.01em;
 }
 
-/* Keep line 2 tight to line 1 (title block) */
+
 .hero__content .line2 { 
   margin-bottom: 0.2em; 
 }
 
-/* If the box now feels tight with the added spacing, bump min-height a bit */
+
 .hero__content { 
-  min-height: 240px; /* tweak 220–260px to taste */
+  min-height: 240px; 
 }
 
-/* Typography inside the banner (crisp, no shadows) */
+
 .hero__content * {
   text-shadow: none !important;
   -webkit-font-smoothing: antialiased;
@@ -156,11 +135,10 @@ th,td{
   margin: 0.1em 0;
   line-height: 1.2;
   font-weight: 600;
-  font-size: 1.9em; /* bigger than normal paragraphs */
+  font-size: 1.9em; 
 }
 
-/* === Typing effect (only lines 2–4) === */
-/* Lines 2–4 reveal inside a fixed box */
+
 .type {
   position: relative;
   overflow: hidden;         /* text reveals within fixed box */
@@ -170,7 +148,7 @@ th,td{
   padding-right: 3px;       /* room for caret at start */
 }
 
-/* Full-height caret (visible only while typing) */
+
 .type::after {
   content: "";
   position: absolute;
@@ -208,13 +186,7 @@ th,td{
 .top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
 .bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
-/* Conference Title Logo */
-/* .title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0;} 
-.title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
-.year{color: #505050; font-size:0.67em; font-weight: lighter;} */
 
-/* Navigation Links (Home, Registration, etc) */
-/* Make nav table into a flex container */
 table.navigation {
     display: flex;
     justify-content: center;
