@@ -4,7 +4,7 @@
 <head>
     <base href=".">
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="assets/new-icon.png"/>
+    <link rel="shortcut icon" type="image/png" href="assets/icon/new-icon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
     <meta name="description" content="Conference Template">
     <meta name="resource-type" content="document">
@@ -15,7 +15,7 @@
 
 <body>
     <div class="hero">
-    <img class="hero__img" src="assets/editted-banner.jfif" alt="SECURE-AI4H Banner">
+    <img class="hero__img" src="assets/banner/editted-banner.jfif" alt="SECURE-AI4H Banner">
         <div class="hero__overlay">
             <div class="hero__content">
                 <!-- Line 1: static (no typing, no cursor) -->
@@ -70,199 +70,254 @@
 
 
     <h2>Organizers</h2>
-    <div class="organizers-grid">
-    
-        <!-- #TODO: Add a feature where if cursor hovers over the image, the image gets bigger -->
 
-        <div class="organizer-card">
-            <a href="http://www.anarayan.com/">
-                <img src="assets/apurva-narayan.jfif" alt="Apurva Narayan">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Apurva Narayan</strong><br>
-                Associate Professor<br>
-                Department of Computer Science &<br>
-                Department of Electrical and Computer Engineering<br>
-                Western University
-                <hr class="organizer-divider">
-                Affiliate Associate Professor<br>
-                Department of Computer Science<br>
-                University of British Columbia
-                <hr class="organizer-divider">
-                Associate Faculty<br>
-                School of Engineering<br>
-                University of British Columbia
-                <hr class="organizer-divider">
-                Adjunct Associate Professor<br>
-                Department of Systems Design Engineering<br>
-                University of Waterloo
+
+    <section class="organizers-list" id="organizers">
+        <!-- 1 (odd): image left, text right-aligned inward -->
+        <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/apurva-narayan.jfif" alt="Apurva Narayan"></div>
+                <div class="back">
+                <a class="site-btn" href="https://a-narayan.github.io/" target="_blank" rel="noopener">Personal Website</a>
+                </div>
             </div>
-        </div>
-
-        <div class="organizer-card">
-            <a href="https://www.lions.odu.edu/~hqin/">
-                <img src="assets/hong-qin.jfif" alt="Hong Qin">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Hong Qin</strong><br>
-                    Associate Professor<br>
-                    School of Data Science<br>
-                    Department of Computer Science<br>
-                    Old Dominion University
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Apurva Narayan</h3>
+            <ul class="organizer-meta">
+                <li>Associate Professor — Computer Science & Electrical and Computer Engineering</li>
+                <li>Western University</li>
+                <li class="organizer-divider"></li>
+                <li>Affiliate Associate Professor — University of British Columbia</li>
+                <li>Associate Faculty — UBC School of Engineering</li>
+                <li>Adjunct Associate Professor — University of Waterloo</li>
+            </ul>
             </div>
-        </div>
+        </article>
 
-        <div class="organizer-card">
-            <a href="https://www.elhamdolatabadi.com/">
-                <img src="assets/elham-dolatabadi.jfif" alt="Elham Dolatabadi">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Elham Dolatabadi</strong><br>
-                Assistant Professor<br>
-                Faculty of Health<br>
-                York University
-                <hr class="organizer-divider">
-                Electrical Engineering and Computer Science<br>
-                Lassonde School of Engineering<br>
-                York University
-                <hr class="organizer-divider">
-                Faculty Affiliate<br>
-                Vector Institute
-                <hr class="organizer-divider">
-                Principal Investigator<br>
-                i4Health Research Lab
-            </div>    
-        </div>
-
-        <div class="organizer-card">
-            <a href="https://www.schulich.uwo.ca/paediatrics/about_us/people/faculty/ganesan_rishi.html">
-                <img src="assets/rishi-ganesan.jfif" alt="Rishi Ganesan">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Rishi Ganesan</strong><br>
-                Paediatric Intensive Care Physician-Researcher<br>
-                Specialization in Paediatric Neurocritical Care
-                <hr class="organizer-divider">
-                Division of Paediatric Critical Care Medicine<br>
-                Children’s Hospital - London Health Sciences Centre
-                <hr class="organizer-divider">
-                Assistant Professor<br>
-                Department of Paediatrics<br>
-                Schulich School of Medicine<br>
-                Western University
-                <hr class="organizer-divider">
-                Associate Scientist<br>
-                Lawson Health Research Institute
+        <!-- 2 (even): image right, text left-aligned inward -->
+        <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/hong-qin.jfif" alt="Hong Qin"></div>
+                <div class="back">
+                <a class="site-btn" href="https://www.lions.odu.edu/~hqin/" target="_blank" rel="noopener">Personal Website</a>
+                </div>
             </div>
-        </div>
-
-        <div class="organizer-card">
-            <a href="https://mohsenzadehlab.com/">
-                <img src="assets/yalda-mohsenzadeh.jfif" alt="Yalda Mohsenzadeh">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Yalda Mohsenzadeh</strong><br>
-                Assistant Professor of Computer Science<br>
-                Brain and Mind Institute<br>
-                Western University
-                <hr class="organizer-divider">
-                Faculty Member<br>
-                Vector Institute for Artificial Intelligence
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Hong Qin</h3>
+            <ul class="organizer-meta">
+                <li>Associate Professor — School of Data Science & Computer Science</li>
+                <li>Old Dominion University</li>
+            </ul>
             </div>
-        </div>
+        </article>
 
-        <div class="organizer-card">
-            <a href="https://letuqingge.github.io/research-group-app/">
-                <img src="assets/letu-qingge.jpg" alt="Letu Qingge">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Letu Qingge</strong><br>
-                Assistant Professor<br>
-                Department of Computer Science<br>
-                North Carolina A&amp;T State University
+        <!-- 3 -->
+        <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/elham-dolatabadi.jfif" alt="Elham Dolatabadi"></div>
+                <div class="back">
+                <a class="site-btn" href="https://www.elhamdolatabadi.com/" target="_blank" rel="noopener">Personal Website</a>
+                </div>
             </div>
-        </div>
-
-        <div class="organizer-card">
-            <a href="https://lassonde.yorku.ca/users/lskalantari">
-                <img src="assets/laleh-seyyed-kalantari.jfif" alt="Laleh Seyyed Kalantari">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Laleh Seyyed-Kalantari</strong><br>
-                    Assistant Professor<br>
-                    Lassonde School of Engineering<br>
-                    York University
-                    <hr class="organizer-divider">
-                    Faculty Affiliate<br>
-                    Vector Institute for Artificial Intelligence
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Elham Dolatabadi</h3>
+            <ul class="organizer-meta">
+                <li>Assistant Professor — Electrical & Computer Engineering</li>
+                <li>University of Alberta</li>
+                <li class="organizer-divider"></li>
+                <li>Principal Investigator — i4Health Research Lab</li>
+            </ul>
             </div>
-        </div>
+        </article>
 
-        <div class="organizer-card">
-            <a href="https://rsinghlab.org/">
-                <img src="assets/rsingh.jpg" alt="Ritambhara Singh">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Ritambhara Singh</strong><br>
-                Associate Professor of Computer Science and Data Science<br>
-                Brown University
-                <hr class="organizer-divider">
-                Member<br>
-                Center for Computational Molecular Biology
+        <!-- 4 -->
+        <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/rishi-ganesan.jfif" alt="Rishi Ganesan"></div>
+                <div class="back">
+                <a class="site-btn" href="https://www.schulich.uwo.ca/paediatrics/about_us/people/faculty/ganesan_rishi.html" target="_blank" rel="noopener">Personal Website</a>
+                </div>
             </div>
-        </div>
-
-
-        <div class="organizer-card">
-            <a href="https://lmp.utoronto.ca/faculty/amol-verma">
-                <img src="assets/amol-verma.jfif" alt="Amol Verma">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Amol Verma</strong><br>
-                Internal Medicine Physician and Scientist<br>
-                Unity Health Toronto
-                <hr class="organizer-divider">
-                Temerty Professor of AI Research and Education in Medicine<br>
-                University of Toronto
-                <hr class="organizer-divider">
-                Provincial Clinical Lead for Quality Improvement<br>
-                General Internal Medicine, Ontario Health
-                <hr class="organizer-divider">
-                Vice-Chair<br>
-                Researcher Council, Digital Research Alliance of Canada
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Rishi Ganesan</h3>
+            <ul class="organizer-meta">
+                <li>Paediatric Intensive Care Physician-Researcher — Children’s Hospital, LHSC</li>
+                <li>Assistant Professor — Paediatrics, Schulich School of Medicine, Western University</li>
+                <li class="organizer-divider"></li>
+                <li>Associate Scientist — Lawson Health Research Institute</li>
+            </ul>
             </div>
-        </div>
+        </article>
 
-        <div class="organizer-card">
-            <a href="https://rsaran-bioai.github.io/">
-                <img src="assets/runjhun-saran.jfif" alt="Amol Verma">
-            </a>
-            <div class="organizer-info">
-                <strong>Dr. Runjhun Narayan</strong><br>
-                Adjunct Assistant Professor<br>
-                University of Waterloo
-                <hr class="organizer-divider">
-                Adjunct Professor<br>
-                The University of British Columbia
-                <hr class="organizer-divider">
-                Provincial Clinical Lead for Quality Improvement<br>
-                General Internal Medicine, Ontario Health
-                <hr class="organizer-divider">
-                Co-Founder<br>
-                Molwise
+        <!-- 5 -->
+        <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/yalda-mohsenzadeh.jfif" alt="Abeba Birhane"></div>
+                <div class="back">
+                <a class="site-btn" href="https://mohsenzadehlab.com/home" target="_blank" rel="noopener">Personal Website</a>
+                </div>
             </div>
-        </div>
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Yalda Mohsenzadeh</h3>
+            <ul class="organizer-meta">
+                <li>Assistant Professor of Computer Science — Brain and Mind Institute - Western University</li>
+                <li>Faculty Member — Vector Institute for Artificial Intelligence</li>
+            </ul>
+            </div>
+        </article>
 
-    </div>
+        <!-- 6 -->
+        <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/letu-qingge.jpg" alt="Letu Qingge"></div>
+                <div class="back">
+                <a class="site-btn" href="https://letuqingge.github.io/research-group-app/" target="_blank" rel="noopener">Personal Website</a>
+                </div>
+            </div>
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Letu Qingge</h3>
+            <ul class="organizer-meta">
+                <li>Assistant Professor — Department of Computer Science</li>
+                <li>North Carolina A&amp;T State University</li>
+            </ul>
+            </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/laleh-seyyed-kalantari.jfif" alt="Laleh Seyyed-Kalantari"></div>
+                <div class="back">
+                <a class="site-btn" href="https://lassonde.yorku.ca/users/lskalantari" target="_blank" rel="noopener">Personal Website</a>
+                </div>
+            </div>
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Laleh Seyyed-Kalantari</h3>
+            <ul class="organizer-meta">
+                <li>Assistant Professor — School of Engineering Science, SFU / Lassonde (York)</li>
+                <li>Research Scientist — Vector Institute</li>
+            </ul>
+            </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/rsingh.jpg" alt="Ritambhara Singh"></div>
+                <div class="back">
+                <a class="site-btn" href="https://rsinghlab.org/" target="_blank" rel="noopener">Personal Website</a>
+                </div>
+            </div>
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Ritambhara Singh</h3>
+            <ul class="organizer-meta">
+                <li>Associate Professor — Computer Science & Data Science</li>
+                <li>Brown University — CCMB Member</li>
+            </ul>
+            </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/amol-verma.jfif" alt="Amol Verma"></div>
+                <div class="back">
+                <a class="site-btn" href="https://lmp.utoronto.ca/faculty/amol-verma" target="_blank" rel="noopener">Personal Website</a>
+                </div>
+            </div>
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Amol Verma</h3>
+            <ul class="organizer-meta">
+                <li>Internal Medicine Physician & Scientist — Unity Health Toronto</li>
+                <li>Temerty Professor of AI in Medicine — University of Toronto</li>
+                <li>Provincial Clinical Lead (QI) — Ontario Health</li>
+                <li>Vice-Chair — Researcher Council, Digital Research Alliance of Canada</li>
+            </ul>
+            </div>
+        </article>
+
+        <!-- 10 -->
+         <article class="organizer">
+            <figure class="organizer-photo flip">
+            <div class="flip-inner">
+                <div class="front"><img src="assets/organizers/runjhun-saran.jfif" alt="Amol Verma"></div>
+                <div class="back">
+                <a class="site-btn" href="https://rsaran-bioai.github.io/" target="_blank" rel="noopener">Personal Website</a>
+                </div>
+            </div>
+            </figure>
+            <div class="organizer-text">
+            <h3 class="organizer-name">Dr. Runjhun Narayan</h3>
+            <ul class="organizer-meta">
+                <li>Adjunct Assistant Professor — University of Waterloo</li>
+                <li>Adjunct Professor — he University of British Columbia</li>
+                <li>Provincial Clinical Lead for Quality Improvement — General Internal Medicine, Ontario Health</li>
+                <li>Co-Founder — Molwise</li>
+            </ul>
+            </div>
+        </article>
+
+    </section>
+
 
     <h2>Symposium Assistant</h2>
     <div class="assistant-card">
-        <img src="assets/sara.jpg" alt="Sara Lahourpour">
+        <img src="assets/organizers/sara.jpg" alt="Sara Lahourpour">
         <div class="assistant-info">
             <strong>Sara Lahourpour</strong><br>
             
         </div>
     </div>
+
+
+    <script>
+        (function () {
+            // Respect reduced motion
+            const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (reduce) return;
+
+            const items = document.querySelectorAll('.organizer');
+            if (!('IntersectionObserver' in window) || items.length === 0) {
+            // graceful fallback: reveal all if IO not supported
+            items.forEach(el => el.classList.add('visible'));
+            return;
+            }
+
+            const io = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                obs.unobserve(entry.target); // fire once per card
+                }
+            });
+            }, {
+            root: null,
+            rootMargin: '0px 0px -10% 0px', // trigger a bit before fully in view
+            threshold: 0.15
+            });
+
+            items.forEach(el => io.observe(el));
+        })();
+    </script>
+
 
     
 
