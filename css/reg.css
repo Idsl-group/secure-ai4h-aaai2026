@@ -1,0 +1,441 @@
+/* --------------------------------------------------------------
+   Registration Hero
+-------------------------------------------------------------- */
+
+.page-hero--registration {
+  min-height: 420px;
+  height: 48vh;
+  background:
+    linear-gradient(
+      to right,
+      rgba(5, 6, 23, 0.85) 0%,
+      rgba(5, 6, 23, 0.70) 32%,
+      rgba(5, 6, 23, 0.35) 68%,
+      rgba(5, 6, 23, 0.08) 100%
+    ),
+    url("../assets/test.jpg") center/cover no-repeat;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.24);
+  position: relative;
+}
+
+.page-hero--registration .page-hero__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.page-hero__text {
+  max-width: 640px;
+}
+
+/* eyebrow pill box + text, matching venue page style */
+
+.page-hero__eyebrow-box {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(5, 6, 23, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.35),
+    0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+.page-hero--registration .page-hero__eyebrow {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.page-hero--registration .page-hero__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-top: 0.65rem;
+  margin-bottom: 0.35rem;
+}
+
+.page-hero--registration .page-hero__lead {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #cbd5e1;
+  max-width: 580px;
+  margin-top: 0.4rem;
+}
+
+/* --------------------------------------------------------------
+   Registration main wrapper
+-------------------------------------------------------------- */
+
+.section--registration {
+  padding: 0; /* we handle vertical spacing per row */
+  background: transparent;
+  position: relative;
+}
+
+.registration-content {
+  width: 100%;
+}
+
+/* inner container for each topic row */
+.reg-topic__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.4rem 0;
+}
+
+/* --------------------------------------------------------------
+   Alternating FULL-WIDTH background rows
+-------------------------------------------------------------- */
+
+.reg-topic {
+  width: 100%;
+}
+
+/* odd rows: 1, 3, 5, ... */
+.reg-topic:nth-of-type(odd) {
+  background-color: #0f172a; /* deep navy */
+}
+
+/* even rows: 2, 4, 6, ... */
+.reg-topic:nth-of-type(even) {
+  background-color: #111827; /* slightly lighter slate */
+}
+
+/* --------------------------------------------------------------
+   Generic topic section typography
+-------------------------------------------------------------- */
+
+.reg-topic__header {
+  margin-bottom: 0.9rem;
+}
+
+.reg-topic__title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 0.3rem;
+}
+
+.reg-topic__intro {
+  color: #cbd5e1;
+}
+
+/* --------------------------------------------------------------
+   Topic 1: How to register (split layout + steps card)
+-------------------------------------------------------------- */
+
+.reg-topic--flow .reg-topic__body--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+  gap: 1.4rem;
+}
+
+.reg-topic--flow .reg-topic__text p {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+/* Steps card */
+
+.reg-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.98);
+  padding: 1.1rem 1.2rem 1.05rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.reg-card__heading {
+  font-size: 1.0rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 0.25rem;
+}
+
+.reg-card__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #cbd5e1;
+  font-size: 0.94rem;
+}
+
+.reg-card__list--numbered {
+  list-style: decimal;
+}
+
+/* --------------------------------------------------------------
+   Topic 2: Options & fees (pills)
+-------------------------------------------------------------- */
+
+.reg-topic--panels .reg-topic__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.reg-card--strip {
+  border-radius: 0.9rem;
+}
+
+.reg-card__pills {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reg-card__pill {
+  display: flex;
+  flex-direction: column;
+  padding: 0.55rem 0.7rem;
+  border-radius: 0.7rem;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+.reg-card__pill-label {
+  font-weight: 600;
+  font-size: 0.93rem;
+  color: #e5e7eb;
+}
+
+.reg-card__pill-text {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.reg-topic__footnote {
+  font-size: 0.86rem;
+  color: rgba(148, 163, 184, 0.95);
+}
+
+/* --------------------------------------------------------------
+   Topic 3: Deadlines (timeline)
+-------------------------------------------------------------- */
+
+.reg-topic--timeline .reg-topic__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.reg-timeline {
+  border-radius: 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: radial-gradient(circle at top left,
+    rgba(15, 23, 42, 0.98),
+    rgba(15, 23, 42, 0.96));
+  padding: 0.9rem 1.0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.reg-timeline__item {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.reg-timeline__badge {
+  flex-shrink: 0;
+  align-self: flex-start;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: rgba(59, 130, 246, 0.25);
+  border: 1px solid rgba(59, 130, 246, 0.55);
+  color: #bfdbfe;
+}
+
+.reg-timeline__text {
+  margin: 0;
+  font-size: 0.93rem;
+  color: #e2e8f0;
+}
+
+/* --------------------------------------------------------------
+   Topic 4: Payment & refunds (two soft cards)
+-------------------------------------------------------------- */
+
+.reg-topic--two-cards .reg-topic__body--grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.reg-card--soft {
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.75);
+}
+
+/* --------------------------------------------------------------
+   Topic 5: Visa callout
+-------------------------------------------------------------- */
+
+.reg-topic--callout .reg-topic__body {
+  margin-top: 0.6rem;
+}
+
+.reg-callout {
+  border-radius: 1rem;
+  border: 1px solid rgba(129, 230, 217, 0.7);
+  background: radial-gradient(circle at top left,
+    rgba(8, 47, 73, 0.95),
+    rgba(15, 23, 42, 0.98));
+  padding: 1rem 1.15rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.reg-callout__text {
+  margin: 0;
+  color: #e0f2fe;
+}
+
+.reg-callout__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.93rem;
+  color: #e2e8f0;
+}
+
+/* --------------------------------------------------------------
+   Topic 6: Simple bullet list
+-------------------------------------------------------------- */
+
+.reg-topic--simple .reg-topic__body {
+  margin-top: 0.4rem;
+}
+
+.reg-simple-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #e2e8f0;
+}
+
+.reg-simple-list li + li {
+  margin-top: 0.25rem;
+}
+
+/* --------------------------------------------------------------
+   Responsive adjustments
+-------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .reg-topic--flow .reg-topic__body--split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .reg-topic--two-cards .reg-topic__body--grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------
+   Side decorations (reuse existing glow)
+-------------------------------------------------------------- */
+
+.side-decorated::before,
+.side-decorated::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  filter: blur(60px);
+  z-index: -1;
+}
+
+.side-decorated::before {
+  left: -80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(59, 130, 246, 0.18),
+    rgba(99, 102, 241, 0.12),
+    rgba(147, 51, 234, 0.10)
+  );
+}
+
+.side-decorated::after {
+  right: -80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(147, 51, 234, 0.12),
+    rgba(99, 102, 241, 0.10),
+    rgba(59, 130, 246, 0.18)
+  );
+}
+
+@media (max-width: 900px) {
+  .side-decorated::before,
+  .side-decorated::after {
+    display: none;
+  }
+}
+
+
+/* Strong, hero-matching full-width alternating backgrounds */
+
+.reg-topic:nth-of-type(odd) {
+  background-color: #050617; /* hero darkest tone */
+}
+
+.reg-topic:nth-of-type(even) {
+  background-color: #0a1124; /* hero mid-blue tone */
+}
+
+
+.reg-topic__inner {
+  max-width: var(--container-width);  /* 1120px, same as other pages */
+  margin: 0 auto;
+  padding: 2.4rem 1.25rem;            /* same side padding as .main-container */
+}
+
+
+/* Premium CTA Block */
+.reg-cta {
+  margin-top: 2.5rem;
+  text-align: center;
+  padding: 2.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reg-cta__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 2.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  text-decoration: none;
+
+  /* Gradient consistent with your style */
+  background: linear-gradient(to right, #38bdf8, #a855f7);
+  color: #0b1020;
+
+  /* Premium glow */
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.75);
+  transition: all 0.2s ease-out;
+}
+
+.reg-cta__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 55px rgba(15, 23, 42, 0.9);
+}

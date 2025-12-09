@@ -1,0 +1,376 @@
+/* --------------------------------------------------------------
+   CFP Hero
+-------------------------------------------------------------- */
+
+.page-hero--cfp {
+  min-height: 420px;
+  height: 48vh;
+  background:
+    linear-gradient(
+      to right,
+      rgba(5, 6, 23, 0.85) 0%,
+      rgba(5, 6, 23, 0.70) 32%,
+      rgba(5, 6, 23, 0.35) 68%,
+      rgba(5, 6, 23, 0.08) 100%
+    ),
+    url("../assets/speaker1.png") center/cover no-repeat; /* update image path if needed */
+  border-bottom: 1px solid rgba(148, 163, 184, 0.24);
+  position: relative;
+}
+
+.page-hero--cfp .page-hero__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.page-hero__text {
+  max-width: 640px;
+}
+
+/* Eyebrow pill + matching typography (same as venue/registration) */
+
+.page-hero__eyebrow-box {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  background: rgba(5, 6, 23, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.35),
+    0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+.page-hero--cfp .page-hero__eyebrow {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.page-hero--cfp .page-hero__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-top: 0.65rem;
+  margin-bottom: 0.35rem;
+}
+
+.page-hero--cfp .page-hero__lead {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #cbd5e1;
+  max-width: 580px;
+  margin-top: 0.4rem;
+}
+
+/* --------------------------------------------------------------
+   CFP main wrapper
+-------------------------------------------------------------- */
+
+.section--cfp {
+  padding: 0; /* handled by each row */
+  background: transparent;
+  position: relative;
+}
+
+.cfp-content {
+  width: 100%;
+}
+
+/* Inner container for each full-width band */
+.cfp-topic__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.4rem 1.5rem;
+}
+
+/* --------------------------------------------------------------
+   Alternating FULL-WIDTH background rows
+-------------------------------------------------------------- */
+
+.cfp-topic {
+  width: 100%;
+}
+
+/* Reuse registration page colors for odd/even rows */
+.cfp-topic:nth-of-type(odd) {
+  background-color: #050617; /* hero darkest tone */
+}
+
+.cfp-topic:nth-of-type(even) {
+  background-color: #0a1124; /* hero mid-blue tone */
+}
+
+/* --------------------------------------------------------------
+   Generic topic section typography
+-------------------------------------------------------------- */
+
+.cfp-topic__header {
+  margin-bottom: 0.9rem;
+}
+
+.cfp-topic__title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  margin-bottom: 0.3rem;
+}
+
+.cfp-topic__intro {
+  color: #cbd5e1;
+}
+
+.cfp-topic__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* --------------------------------------------------------------
+   Reusable CFP cards
+-------------------------------------------------------------- */
+
+.cfp-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.98);
+  padding: 1.1rem 1.2rem 1.05rem;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cfp-card__heading {
+  font-size: 1.0rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 0.25rem;
+}
+
+.cfp-card__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #cbd5e1;
+  font-size: 0.94rem;
+}
+
+.cfp-card__text {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+/* Link and button styles inside cards */
+
+.cfp-card__link {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #a5b4fc;
+  text-decoration: underline;
+}
+
+.cfp-card__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.7rem;
+  padding: 0.5rem 1.0rem;
+  border-radius: 999px;
+  border: 1px solid rgba(129, 140, 248, 0.8);
+  background: rgba(30, 64, 175, 0.95);
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------
+   Topic-specific layouts
+-------------------------------------------------------------- */
+
+/* Topic 1: Format & attendance */
+.cfp-topic--format .cfp-topic__body--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+  gap: 1.4rem;
+}
+
+.cfp-topic--format .cfp-topic__body--split > p {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.cfp-attendance {
+  margin-top: 1.0rem;
+}
+
+.cfp-attendance__heading {
+  font-size: 1.0rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 0.3rem;
+}
+
+/* Topic 2: Topics of interest */
+.cfp-topic--topics .cfp-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.cfp-topic-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+
+/* Topic 3: Submission guidelines */
+.cfp-topic--guidelines .cfp-topic__body--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.0fr);
+  gap: 1.4rem;
+}
+
+.cfp-topic--guidelines .cfp-topic__text p + p {
+  margin-top: 0.6rem;
+}
+
+/* Topic 4: Important dates (timeline) */
+.cfp-topic--dates .cfp-topic__body {
+  gap: 0.9rem;
+}
+
+.cfp-timeline {
+  border-radius: 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: radial-gradient(circle at top left,
+    rgba(15, 23, 42, 0.98),
+    rgba(15, 23, 42, 0.96));
+  padding: 0.9rem 1.0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.cfp-timeline__item {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.cfp-timeline__badge {
+  flex-shrink: 0;
+  align-self: flex-start;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  background: rgba(59, 130, 246, 0.25);
+  border: 1px solid rgba(59, 130, 246, 0.55);
+  color: #bfdbfe;
+}
+
+.cfp-timeline__text {
+  margin: 0;
+  font-size: 0.93rem;
+  color: #e2e8f0;
+}
+
+.cfp-topic__footnote {
+  font-size: 0.86rem;
+  color: rgba(148, 163, 184, 0.95);
+}
+
+/* Topic 5: OpenReview */
+.cfp-topic--openreview .cfp-topic__body--split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.1fr);
+  gap: 1.4rem;
+}
+
+/* Topic 6: Contact */
+.cfp-topic--contact .cfp-topic__body p {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+/* --------------------------------------------------------------
+   Responsive adjustments
+-------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .cfp-topic--format .cfp-topic__body--split,
+  .cfp-topic--guidelines .cfp-topic__body--split,
+  .cfp-topic--openreview .cfp-topic__body--split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cfp-topic--topics .cfp-topic-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------
+   Side decorations (reuse registration style)
+-------------------------------------------------------------- */
+
+.side-decorated::before,
+.side-decorated::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  filter: blur(60px);
+  z-index: -1;
+}
+
+.side-decorated::before {
+  left: -80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(59, 130, 246, 0.18),
+    rgba(99, 102, 241, 0.12),
+    rgba(147, 51, 234, 0.10)
+  );
+}
+
+.side-decorated::after {
+  right: -80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(147, 51, 234, 0.12),
+    rgba(99, 102, 241, 0.10),
+    rgba(59, 130, 246, 0.18)
+  );
+}
+
+@media (max-width: 900px) {
+  .side-decorated::before,
+  .side-decorated::after {
+    display: none;
+  }
+}
+
+
+
+
+/* Align CFP main content with hero text */
+.section--cfp .cfp-topic__inner {
+  padding-left: 1.25rem;   /* same as .main-container */
+  padding-right: 1.25rem;  /* match hero spacing */
+}
+
+
+/* Align CFP main content with the hero text */
+.section--cfp .cfp-topic__inner {
+  max-width: var(--container-width);   /* 1120px, same as .main-container */
+  padding: 2.4rem 1.25rem;             /* same horizontal padding as hero */
+}
