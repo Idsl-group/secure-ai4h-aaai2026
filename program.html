@@ -60,29 +60,54 @@
         <h1 class="page-hero__title">Program</h1>
 
         <p class="page-hero__lead">
-          The detailed schedule for SECURE-AI4H will be published here soon.
+          The full schedule of talks, panels, and poster sessions for the SECURE-AI4H workshop.
         </p>
       </div>
     </div>
   </section>
 
   <!-- MAIN CONTENT -->
+    <!-- MAIN CONTENT -->
   <section class="section section--program side-decorated">
-    <div class="program-content">
-      <section class="program-row">
-        <div class="main-container program-row__inner">
-          <div class="program-callout">
-            <p class="program-callout__title">
-              Program coming soon
-            </p>
-            <p class="program-callout__text">
-              This page will be updated with the full workshop schedule closer to the event.
-            </p>
+    <div class="main-container">
+      <div class="program-ui">
+        <div class="program-ui__header">
+          <h2 class="program-ui__title">Schedule & Sessions</h2>
+          <p class="program-ui__subtitle">
+            Browse the full schedule and poster sessions. Use search and filters to quickly find items.
+          </p>
+        </div>
+
+        <div class="program-ui__tabs" role="tablist" aria-label="Program tabs">
+          <button class="program-tab is-active" type="button" role="tab" aria-selected="true" data-tab="schedule">
+            Schedule
+          </button>
+          <button class="program-tab" type="button" role="tab" aria-selected="false" data-tab="poster1">
+            Poster Session 1
+          </button>
+          <button class="program-tab" type="button" role="tab" aria-selected="false" data-tab="poster2">
+            Poster Session 2
+          </button>
+        </div>
+
+        <div class="program-ui__toolbar">
+          <div class="program-ui__search">
+            <label class="sr-only" for="programSearch">Search program</label>
+            <input id="programSearch" type="search" placeholder="Search title, speaker, authors…" autocomplete="off" />
           </div>
         </div>
-      </section>
+
+
+        <div class="program-ui__content">
+          <div id="programPanel" class="program-panel" aria-live="polite"></div>
+          <div id="programEmpty" class="program-empty" hidden>
+            No results found. Try clearing filters or searching a different keyword.
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
 </main>
 
 <footer class="site-footer">
@@ -94,8 +119,10 @@
           Website maintained by the SECURE-AI4H organizing committee.
         </p>
       </div>
-    </footer>
+  </footer>
     <script src="js/cfp.js" defer></script>
+    <script src="js/program.js" defer></script>
+
 
 </body>
 </html>
