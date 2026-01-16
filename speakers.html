@@ -11,86 +11,230 @@
 
 <body>
 
-  <header class="site-header">
-    <div class="site-header__overlay"></div>
-    <nav class="navbar">
-      <div class="navbar__inner main-container">
-        <a href="index.html" class="navbar__brand">
-          <span class="navbar__logo-circle">AI4H</span>
-          <span class="navbar__brand-text">
-            <span class="navbar__brand-title">SECURE-AI4H</span>
-            <span class="navbar__brand-subtitle">AAAI 2026 Winter Workshop</span>
-          </span>
-        </a>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="site-header__overlay"></div>
+  <nav class="navbar">
+    <div class="navbar__inner main-container">
+      <a href="index.html" class="navbar__brand">
+        <span class="navbar__logo-circle">AI4H</span>
+        <span class="navbar__brand-text">
+          <span class="navbar__brand-title">SECURE-AI4H</span>
+          <span class="navbar__brand-subtitle">AAAI 2026 Winter Workshop</span>
+        </span>
+      </a>
 
-        <button class="navbar__toggle" aria-label="Toggle navigation">☰</button>
+      <button class="navbar__toggle" aria-label="Toggle navigation">☰</button>
 
-        <ul class="navbar__links">
+      <ul class="navbar__links">
         <li><a href="index.html" class="navbar__link">Home</a></li>
         <li><a href="call-for-papers.html" class="navbar__link">Call for Papers</a></li>
         <li><a href="program.html" class="navbar__link">Program</a></li>
-        <li><a href="speakers.html" class="navbar__link  navbar__link--active">Speakers</a></li>
+        <li><a href="speakers.html" class="navbar__link navbar__link--active">Speakers</a></li>
         <li><a href="venue.html" class="navbar__link">Venue</a></li>
         <li><a href="organizers.html" class="navbar__link">Organizers</a></li>
         <li><a href="registeration.html" class="navbar__link">Registration</a></li>
         <li><a href="faq.html" class="navbar__link">FAQ</a></li>
       </ul>
-      </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <main>
+<!-- ================= MAIN ================= -->
+<main>
+
   <!-- HERO -->
   <section class="page-hero page-hero--speakers">
     <div class="main-container page-hero__inner">
       <div class="page-hero__text">
         <div class="page-hero__eyebrow-box">
-          <p class="page-hero__eyebrow">
-            Invited Speakers
-          </p>
+          <p class="page-hero__eyebrow">Invited & Keynote Speakers</p>
         </div>
 
         <h1 class="page-hero__title">Speakers</h1>
 
         <p class="page-hero__lead">
-          The list of invited and featured speakers will be announced here.
+          Meet our keynote and invited speakers presenting cutting-edge research
+          on safe, ethical, and trustworthy AI for health.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- MAIN CONTENT -->
+  <!-- SPEAKERS LIST -->
   <section class="section section--speakers side-decorated">
     <div class="speakers-content">
       <section class="speakers-row">
         <div class="main-container speakers-row__inner">
-          <div class="speakers-callout">
-            <p class="speakers-callout__title">
-              Speakers will be announced soon
-            </p>
-            <p class="speakers-callout__text">
-              Check back as the workshop approaches for the full list of invited and contributing speakers.
-            </p>
+
+          <div class="spk-stack">
+
+            <!-- ================= SPEAKER CARD ================= -->
+            <article class="spk-card spk-card--keynote">
+              <div class="spk-card__grid">
+
+                <div class="spk-card__photo">
+                  <img src="assets/speakers/fang-catherine.jpg" alt="Catherine Fang" />
+                  
+                </div>
+
+                <div class="spk-card__info">
+                  <h2 class="spk-name">Dr. Catherine Fang</h2>
+                  <p class="spk-affil">Professor at Carnegie Mellon University</p>
+
+                  <div class="spk-meta">
+                    
+                    <a class="spk-link" href="mailto:catherine.fang@sv.cmu.edu">Email</a>
+                  </div>
+                </div>
+
+                <div class="spk-card__talk">
+                  <h3 class="spk-talkTitle">
+                    Responsible AI in AgeTech and Neuroscience
+                  </h3>
+                  <p class="spk-abstract">
+                    This talk explores ethical and responsible AI in AgeTech and
+                    neuroscience. Drawing from real-world deployments and
+                    neuro-AI platforms, Dr. Fang will highlight how interpretable,
+                    robust models enable personalized care while maintaining trust
+                    and safety.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+
+            <!-- ================= SPEAKER CARD ================= -->
+            <article class="spk-card">
+              <div class="spk-card__grid">
+
+                <div class="spk-card__photo">
+                  <img src="assets/speakers/jie-sun.jpg" alt="Jie Sun" />
+                </div>
+
+                <div class="spk-card__info">
+                  <h2 class="spk-name">Jie Sun</h2>
+                  <p class="spk-affil">Cofounder & CEO, ChemT Biotechnology</p>
+
+                  <div class="spk-meta">
+                    
+                    <a class="spk-link" href="mailto:jie.sun@chemtbio.com">Email</a>
+                  </div>
+                </div>
+
+                <div class="spk-card__talk">
+                  <h3 class="spk-talkTitle">
+                    AI for Virtual Cells in Pharma Manufacturing
+                  </h3>
+                  <p class="spk-abstract">
+                    Virtual cells act as decision-support systems in modern
+                    biomanufacturing. This talk discusses uncertainty-aware AI,
+                    robustness under distribution shift, and closed-loop validation
+                    as safety backbones for industrial deployment.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+
+            <!-- ================= SPEAKER CARD ================= -->
+            <article class="spk-card">
+              <div class="spk-card__grid">
+
+                <div class="spk-card__photo">
+                  <img src="assets/speakers/amitava.jfif" alt="Amitava Da" />
+                </div>
+
+                <div class="spk-card__info">
+                  <h2 class="spk-name">Dr. Amitava Das</h2>
+                  <p class="spk-affil">
+                    Professor of CS, BITS Goa · Adjunct AIISC, USA
+                  </p>
+
+                  <div class="spk-meta">
+                    
+                    <a class="spk-link" href="mailto:amitava.santu@gmail.com">Email</a>
+                    <a class="spk-link spk-link--ghost"
+                       href="https://pragyaai.github.io/"
+                       target="_blank" rel="noreferrer">Website</a>
+                  </div>
+                </div>
+
+                <div class="spk-card__talk">
+                  <h3 class="spk-talkTitle">
+                    MedLLM Safety Pathology: Breaking and Fixing Clinical LLMs
+                  </h3>
+                  <p class="spk-abstract">
+                    This talk analyzes adversarial prompting, alignment drift,
+                    retrieval poisoning, and long-term degradation in clinical
+                    LLMs, and proposes systematic safety evaluation and repair
+                    strategies for trustworthy medical AI.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+            
+            
+            <!-- ================= SPEAKER CARD ================= -->
+            <article class="spk-card">
+              <div class="spk-card__grid">
+
+                <div class="spk-card__photo">
+                  <img src="assets/speakers/John-Braun.jpg" alt="W. John Braun and Kyeongah Nah" />
+                </div>
+
+                <div class="spk-card__info">
+                  <h2 class="spk-name">Dr. W. John Braun &amp; Kyeongah Nah</h2>
+                  <p class="spk-affil">
+                    University of British Columbia · National Institute for Mathematical Sciences, Korea
+                  </p>
+
+                  <div class="spk-meta">
+                    
+                    <a class="spk-link" href="mailto:john.braun@ubc.ca">Email</a>
+                  </div>
+                </div>
+
+                <div class="spk-card__talk">
+                  <h3 class="spk-talkTitle">
+                    AI, the SIR Model, and DE-Constrained Kernel Smoothing
+                  </h3>
+                  <p class="spk-abstract">
+                    We study curve-fitting problems for noisy data generated by processes
+                    governed by differential equations. By incorporating differential
+                    equation constraints into nonparametric kernel smoothing, bias can be
+                    reduced while preserving flexibility. Large Language Models are used to
+                    assist in repeated differentiation and parameter tuning. Applications
+                    include simulated stochastic SIR models and real influenza-like illness
+                    data, enabling detection of departures from classical epidemiological
+                    models.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+
+
           </div>
         </div>
       </section>
     </div>
   </section>
+
 </main>
 
-
+<!-- ================= FOOTER ================= -->
 <footer class="site-footer">
-      <div class="main-container site-footer__inner">
-        <p class="site-footer__text">
-          &copy; 2026 SECURE-AI4H · Part of the AAAI 2026 Winter Workshop Series
-        </p>
-        <p class="site-footer__text site-footer__text--muted">
-          Website maintained by the SECURE-AI4H organizing committee.
-        </p>
-      </div>
-    </footer>
-    <script src="js/cfp.js" defer></script>
-
+  <div class="main-container site-footer__inner">
+    <p class="site-footer__text">
+      &copy; 2026 SECURE-AI4H · Part of the AAAI 2026 Winter Workshop Series
+    </p>
+    <p class="site-footer__text site-footer__text--muted">
+      Website maintained by the SECURE-AI4H organizing committee.
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
