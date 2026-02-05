@@ -214,7 +214,7 @@ const isPoster2 = normalize(item.name).includes("poster session 2");
 
 if (isPoster1 || isPoster2) {
   const which = isPoster1 ? "poster1" : "poster2";
-  const posters = (PROGRAM_DATA[which] || []).slice(0, 9);
+  const posters = (PROGRAM_DATA[which] || []).slice(0, 14);
 
   const block = document.createElement("div");
   block.className = "poster-block";
@@ -233,7 +233,7 @@ if (isPoster1 || isPoster2) {
   const btn = document.createElement("button");
   btn.type = "button";
   btn.className = "poster-btn";
-  btn.innerHTML = `View 9 posters <span class="chev">▾</span>`;
+  btn.innerHTML = `View Posters <span class="chev">▾</span>`;
 
   leftStack.appendChild(lab);
   leftStack.appendChild(btn);
